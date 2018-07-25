@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class natural {
+  public static void main(String[ ] args)   {
+      
+      int temp = 0;
+      int j = 0;
+      
+      while (true) {
+        
+         Scanner in = new Scanner(System.in); 
+       System.out.printf("Enter a natural number: ");
+       int num = in.nextInt();
+
+        if(num > 0) {
+            
+           // a = Integer.parseInt(a);
+            
+            for (int x = 1; x <= num ; x++) {
+                if (num % x == 0) {
+                    
+                    System.out.println(x + " is a divisor of " + num + ".");
+                    temp=temp+x;
+                    j++;
+                }
+            }
+          
+            double med = temp/j;
+            System.out.printf("The average value of the divisors is %.3f%n", med);
+            break;
+        }
+      }
+  }
+}
