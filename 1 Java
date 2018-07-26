@@ -1,18 +1,22 @@
 import java.util.Scanner;
 
 public class natural {
-  public static void main(String[ ] args)   {
+  public static void main(String[] args) {
       
       int temp = 0;
       int j = 0;
+      int integer = 0;
+      float num = 0;
       
       while (true) {
         
-         Scanner in = new Scanner(System.in); 
-       System.out.printf("Enter a natural number: ");
-       int num = in.nextInt();
+         Scanner myVar = new Scanner(System.in); {
+         System.out.printf("Enter a natural number: ");
+       
+         num = myVar.nextFloat();
+         integer = Math.round(num);
 
-        if(num > 0) {
+        if (num > 0 && num - integer == 0); {
             
            // a = Integer.parseInt(a);
             
@@ -22,6 +26,7 @@ public class natural {
                     System.out.println(x + " is a divisor of " + num + ".");
                     temp=temp+x;
                     j++;
+                }
                 }
             }
           
