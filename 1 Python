@@ -11,6 +11,6 @@ while True:
                 print(i,"is a divisor of",a,".")
                 temp+=i
                 j+=1
-        med=temp/j
-        print('\n''The average value of the divisors is %.3f' %med)
+        mean=temp/j
+        print('\n''The mean value of the divisors is %.3f' %mean)
         break
