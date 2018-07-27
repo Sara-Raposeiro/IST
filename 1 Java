@@ -30,8 +30,8 @@ public class natural {
                 }
             }
           
-            double med = temp/j;
-            System.out.printf("The average value of the divisors is %.3f%n", med);
+            double mean = temp/j;
+            System.out.printf("The mean value of the divisors is %.3f%n", mean);
             break;
         }
       }
