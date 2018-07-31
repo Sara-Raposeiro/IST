@@ -1,0 +1,8 @@
+def up(word):
+    WORD = word.upper()
+    return WORD
+ 
+word = input("Enter some characters in either uppercase or lowercase: ")
+
+z = up(word)
+print("Here is your entry in uppercase:",z,"!")
