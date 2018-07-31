@@ -21,38 +21,3 @@ def eprimo(num):
 #Invoking the main function
 print("Twin primes inferior to",1000,":")
 main(1000)
-
-#------------------------------------------------------------------
-#Range = input
-
-#Verifying if n and n+2 are twin primes
-def main(inp):
-    for n in range(inp):
-        if n+2 < inp and eprimo(n)==1 and eprimo(n+2)==1:
-            print("(",n,",",n+2,")"'\n')
-
-        
-#Verifying if n is prime
-def eprimo(num):
-    aux = 0
-    for i in range(1,num+1):
-        if num%i == 0:
-            aux+=1
-
-    if aux == 2:
-        return 1
-    else:
-        return 0
-
-#Invoking the main function
-a = input("Enter a range: ")
-
-#Verifying if the input is a number
-try:
-    val = int(a)
-    a = int(a)
-    print("Twin primes inferior to",a,":")
-    main(a)
-
-except ValueError:
-    print("That is not a valid entry.")
